@@ -10,23 +10,32 @@ import jv.dio.br.com.aulas.Aula;
 import jv.dio.br.com.aulas.Aula1;
 import jv.dio.br.com.aulas.Aula2;
 import jv.dio.br.com.exercicios.Ex1;
+import jv.dio.br.com.exercicios.Ex2;
+import jv.dio.br.com.exercicios.Ex3;
+import jv.dio.br.com.exercicios.Ex4;
 import jv.dio.br.com.exercicios.Exercicio;
+import java.util.Scanner;
 
 public class App {
     
 
     public static void main(String[] args) {
         List<Aula> aulas = new ArrayList<>();
-        aulas.add(new Aula1());
+        Scanner scanner = new Scanner(System.in);
+        aulas.add(new Aula1(scanner));
         aulas.add(new Aula2());
         for (Aula aula : aulas) {
             aula.execute();
         }
         System.out.println("\nEXERCICIOS\n");
         List<Exercicio> exercicios = new ArrayList<>();
-        exercicios.add(new Ex1());
+        exercicios.add(new Ex1(scanner));
+        exercicios.add(new Ex2(scanner));
+        exercicios.add(new Ex3(scanner));
+        exercicios.add(new Ex4(scanner));
         for (Exercicio exercicio : exercicios) {
             exercicio.execute();
         }
+        scanner.close();
     }
 }
