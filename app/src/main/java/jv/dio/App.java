@@ -5,9 +5,13 @@ package jv.dio;
 
 import java.util.ArrayList;
 import java.util.List;
-import jv.dio.br.com.Aula1;
-import jv.dio.br.com.Aula2;
-import jv.dio.br.com.Aula;
+
+import jv.dio.br.com.aulas.Aula;
+import jv.dio.br.com.aulas.Aula1;
+import jv.dio.br.com.aulas.Aula2;
+import jv.dio.br.com.exercicios.Ex1;
+import jv.dio.br.com.exercicios.Exercicio;
+
 public class App {
     
 
@@ -17,6 +21,12 @@ public class App {
         aulas.add(new Aula2());
         for (Aula aula : aulas) {
             aula.execute();
+        }
+        System.out.println("\nEXERCICIOS\n");
+        List<Exercicio> exercicios = new ArrayList<>();
+        exercicios.add(new Ex1());
+        for (Exercicio exercicio : exercicios) {
+            exercicio.execute();
         }
     }
 }

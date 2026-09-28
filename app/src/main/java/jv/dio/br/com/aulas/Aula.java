@@ -1,4 +1,4 @@
-package jv.dio.br.com;
+package jv.dio.br.com.aulas;
 
 public interface Aula {
    public void execute();

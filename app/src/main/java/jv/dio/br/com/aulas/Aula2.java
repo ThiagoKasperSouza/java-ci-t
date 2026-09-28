@@ -1,4 +1,4 @@
-package jv.dio.br.com;
+package jv.dio.br.com.aulas;
 
 public class Aula2 implements Aula {
     public Aula2() {
@@ -7,7 +7,7 @@ public class Aula2 implements Aula {
     @Override
     public void execute() {
          //https://www.dio.me/articles/java-tipos-primitivos
-        System.out.printf("TIPOS PRIMITIVOS: \n");
+        System.out.printf("\nTIPOS PRIMITIVOS: \n");
         System.out.printf("byte: %d\n", (byte) 5);
         System.out.printf("short: %d\n", (short) 5);
         System.out.printf("int: %d\n", 5);

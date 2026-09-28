@@ -1,8 +1,8 @@
-package jv.dio.br.com;
+package jv.dio.br.com.aulas;
 
 import java.util.Scanner;
 
-public class Aula1 implements jv.dio.br.com.Aula {
+public class Aula1 implements jv.dio.br.com.aulas.Aula {
     private String getGreeting() {
         return GREETING;
     }
